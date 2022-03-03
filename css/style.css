@@ -1,0 +1,487 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --main-font-name: 'Raleway', sans-serif;
+    --background-color: #F2F2F2;
+    --main-color-primary: #0065FC;
+    --main-color-secondary: #DEEBFF;
+    --main-color-gray: #d9d9d9;
+    --font-size-title: 20px;
+    --font-size-subtitle: 14px;
+}
+
+.main-title {
+    display: none;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--main-font-name);
+}
+
+
+
+a {
+    color: initial;
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+}
+/* Header */
+/* Navigation */
+
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+}
+
+.navigation-logo {
+    width: 100px;
+    padding: 16px;
+    margin: 0;
+}
+
+.navigation-link {
+    color: black;
+    text-decoration: none;
+    padding: 28px;
+    margin: 0;
+}
+
+.active {
+    border-top: 3px solid var(--main-color-primary);
+    color: var(--main-color-primary);
+}
+
+.navigation-link:hover {
+    color: var(--main-color-primary);
+}
+
+/* Filters */
+
+.header-title {
+    font-size: var(--font-size-title);
+    margin-bottom: 8px;
+}
+
+.header-subtitle {
+    font-size: var(--font-size-subtitle);
+    font-weight: 500;
+    margin-bottom: 16px;
+}
+
+.filters-container {
+    margin: 16px 0;
+}
+
+.search-form {
+    display: flex;
+    margin: 16px 0;
+}
+
+.left-icon {
+    background-color: var(--main-color-gray);
+    padding: 12px 14px 12px 16px;
+    border-radius: 14px 0 0 14px;
+}
+
+.search-input {
+    font-weight: bold;
+    padding: 8px 12px;
+    width: 160px;
+    border: 1px solid var(--main-color-gray);
+}
+
+.right-input {
+    background-color: #0065FC;
+    border: none;
+    padding: 12px 16px;
+    border-radius: 0 14px 14px 0;
+    cursor: pointer;
+}
+
+.right-input-label {
+    color: white;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.filters {
+    display: flex;
+    align-items: center;
+    margin: 32px 0;
+    flex-wrap: wrap;
+}
+
+.filters-title {
+    font-size: 18px;
+    margin-right: 16px;
+    margin-bottom: 8px;
+}
+
+.filters-buttons {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.filters-button {
+    padding: 0;
+    margin: 0 8px 8px 0;
+    background-color: white;
+    border: none;
+    border: 2px solid #e7e7e7;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color, transform 0.2s;
+}
+
+.filters-button:hover {
+    background-color: #c5dbfc;
+    transform: scale(1.01);
+    transition: background-color, transform 0.2s;
+}
+
+.filter-icon {
+    color: var(--main-color-primary);
+    background-color: var(--main-color-secondary);
+    padding: 12px;
+    font-size: 18px;
+    min-width: 18px;
+    min-height: 18px;
+    border-radius: 50px;
+}
+
+.filter-label {
+    font-weight: bold;
+    margin: 0 12px 0 4px; 
+}
+
+.result {
+    display: flex;
+    align-items: center;
+    margin-bottom: 32px;
+}
+
+.information-icon {
+    color: var(--main-color-primary);
+    font-size: 14px;
+    border: 2px solid #F2F2F2;
+    border-radius: 50%;
+    padding: 6px 6px 10px 10px;
+    width: 8px;
+    height: 8px;
+}
+
+.result-body {
+    margin-left: 12px;
+}
+
+
+/* Marseille Lodging */
+
+.main-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.box {
+    background-color: var(--background-color);
+    padding: 32px 32px;
+    border-radius: 20px;
+}
+
+.hosting {
+    flex: 2;
+}
+
+.popular {
+    flex: 1;
+    margin-left: 48px;
+}
+
+.box-title {
+    font-size: var(--font-size-title);
+    margin: 16px 0 32px 0;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.card {
+    background-color: white;
+    width: 225px;
+    border-radius: 10px;
+    box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.2);
+    padding: 4px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-image>img {
+    border-radius: 10px 10px 0 0;
+    object-fit: cover;
+    height: 120px;
+}
+
+.card-content {
+    padding: 4px 8px;
+}
+
+.card-title {
+    font-size: 16px;
+}
+
+.card-body {
+    margin: 4px 0;
+}
+
+
+.review-star {
+    font-size: 14px;
+}
+
+.review-star[data-active="true"] {
+    color: var(--main-color-primary);
+}
+
+.review-star[data-active="false"] {
+    color: var(--main-color-gray);
+}
+
+.show-more {
+    display: block;
+    font-weight: bold;
+    margin-top: 48px;
+}
+
+.right-input-icon {
+    display: none;
+}
+
+/* Popular section */
+
+.box-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.popular-icon {
+    font-size: var(--font-size-title);
+}
+
+.popular>.cards>.card {
+    width: 100%;
+    flex-direction: row;
+    padding: 4px;
+    justify-items: center;
+}
+
+.popular>.cards>.card>.card-image {
+    width: 130px;
+}
+
+.popular>.cards>.card>.card-image>img {
+    border-radius: 10px 0 0 10px;
+    height: 130px;
+}
+
+.popular>.cards>.card>.card-content {
+    padding: 10px 0;
+    margin-left: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Marseille activities */
+
+.activities {
+    margin: 48px 0;
+}
+
+.simple-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    justify-content: space-between;
+}
+
+.simple-card {
+    border-radius: 10px;
+    height: 500px;
+    box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.2);
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+}
+
+.simple-card-title {
+    padding: 16px;
+}
+
+.simple-card-image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px 10px 0 0;
+}
+
+.small {
+    height: 200px;
+}
+
+.medium {
+    height: 250px;
+}
+
+.simple-cards-separator {
+    display: flex;
+    flex-direction: column;
+}
+
+.mb {
+    margin-bottom: 51px;
+}
+
+.card:hover, .simple-card:hover {
+    transform: scale(1.01);
+    transition: transform 0.2s;
+}
+
+/* Footer */
+
+.footer {
+    background-color: var(--background-color);
+    padding: 48px 0;
+}
+
+.footer>.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-title {
+    margin-bottom: 18px;
+}
+
+.footer-link {
+    margin-bottom: 12px;
+    display: block;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+}
+
+.container, .navigation, .filters-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 32px;
+}
+
+@media screen and (max-width: 992px) {
+  .main-section {
+    justify-content: center;
+    flex-direction: column-reverse;
+  }
+
+  .hosting {
+      padding: 0;
+      background-color: white;
+  }
+  
+  .popular {
+    margin-left: 0;
+    margin-bottom: 32px;
+  }
+  
+  .simple-cards-separator {
+    gap: 32px;
+  }
+
+  .simple-cards {
+    flex-direction: column;
+  }
+  
+  .simple-card {
+    width: 100%;
+    height: 250px;
+  }
+  .small, .medium {
+    height: 250px;
+  }
+
+  .mb {
+    margin-bottom: 0;
+    gap: 32px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+    .navigation {
+        flex-direction: column;
+        padding: 0;
+    }
+  
+  .navigation-link {
+    padding: 16px;
+    width: 100%;
+    text-align: center;
+    border-bottom: 3px solid var(--background-color);
+  }
+  
+  .active {
+    border-top: none;
+    border-bottom: 3px solid var(--main-color-primary);
+  }
+  
+  
+  .navigation-links {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .card {
+    width: 100%;
+  }
+  
+    .simple-card {
+      width: 100%;
+      height: 250px;
+    }
+    .small, .medium {
+      height: 250px;
+    }
+  
+  .footer > .container {
+    flex-direction: column;
+  }
+  
+  .footer-section {
+    margin-bottom: 16px;
+  }
+  
+}
